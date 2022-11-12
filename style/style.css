@@ -378,11 +378,16 @@ footer div{
     .card-info{
         width: 100%;
     }
+    #formulario{
+        padding-top: unset;
+    }
     .form{
         width: 90%;
     }
     .form-map{
         flex-direction: column;
+        justify-content: unset;
+        height: unset;
     }
     iframe{
         display: none;

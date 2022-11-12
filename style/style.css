@@ -340,12 +340,18 @@ footer div{
 #menu-toggle, .menu-label{
     display: none;
 }
-@media (max-width: 450px){
+@media (min-width: 300px) and (max-width: 720px){
     header{
         justify-content: space-between;
     }
+    header img{
+        width: 20%;
+    }
     nav{
         width: unset;
+    }
+    nav i{
+        font-size: 25px;
     }
     .menu-label{
         display: flex;

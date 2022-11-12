@@ -343,6 +343,7 @@ footer div{
 @media (min-width: 300px) and (max-width: 720px){
     header{
         justify-content: space-between;
+        padding: 0 20px;
     }
     header img{
         width: 20%;

@@ -372,4 +372,16 @@ footer div{
         z-index: 2;
         display: none;
     }
+    main{
+        padding: 0 20px;
+    }
+    .card-info{
+        width: 100%;
+    }
+    .form{
+        width: 90%;
+    }
+    .form-map{
+        flex-direction: column;
+    }
 }

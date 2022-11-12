@@ -384,4 +384,7 @@ footer div{
     .form-map{
         flex-direction: column;
     }
+    iframe{
+        display: none;
+    }
 }

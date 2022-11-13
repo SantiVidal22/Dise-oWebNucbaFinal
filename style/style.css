@@ -349,7 +349,6 @@ footer div{
     left: 0;
     height: 100vh;
     width: 100%;
-    z-index: 1;
     background: rgb(255, 255, 255, 0.05);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(5px);
@@ -361,6 +360,12 @@ footer div{
 .navbar-list li {
     position: relative;
     padding: 0;
+}
+#beneficios{
+    display: none;
+}
+.navbar-list li:nth-child(2){
+    display: none;
 }
 @media (min-width: 250px) and (max-width: 720px){
     header{
@@ -375,6 +380,9 @@ footer div{
     }
     nav i{
         font-size: 25px;
+    }
+    .navbar-list li:nth-child(2){
+        display: block;
     }
     .menu-label{
         display: flex;
@@ -393,6 +401,8 @@ footer div{
         right: 5%;
         width: 90%;
         flex-direction: column;
+        background: rgba(0, 0, 0, 0.411);;
+        border: 2px solid rgb(0, 204, 255);
         border-top: 0px;
         border-radius: 0px 0px 15px 15px;
         padding: 45px 30px;
@@ -401,8 +411,37 @@ footer div{
         z-index: 2;
         display: none;
     }
+    .banner-content{
+        animation: unset;
+        width: 100%;
+    }
+    .banner-content li:nth-child(1){
+        align-items: center;
+        text-align: center;
+        padding: unset;
+    }
+    .banner-content li:nth-child(2){
+        display: none;
+    }
+    .banner-content li h1{
+        width: unset;
+    }
     main{
         padding: 0 20px;
+    }
+    #beneficios{
+        display: flex;
+        padding-top: 150px;
+    }
+    .container-services{
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .card-services{
+        width: 100%;
+    }
+    .card-services img{
+        width: 8rem;
     }
     .card-info{
         width: 95%;
@@ -455,8 +494,8 @@ footer div{
         left: 5%;
         right: 5%;
         width: 90%;
+        background: rgba(0, 0, 0, 0.411);;
         flex-direction: column;
-        background: var(--nav-bg-mobile)!important;
         border: 2px solid rgb(0, 204, 255);
         border-top: 0px;
         border-radius: 0px 0px 15px 15px;

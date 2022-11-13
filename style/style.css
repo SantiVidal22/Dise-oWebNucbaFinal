@@ -340,7 +340,7 @@ footer div{
 #menu-toggle, .menu-label{
     display: none;
 }
-#menu-toggle:checked ~ .overlay {
+#menu-toggle:checked ~ .overlay{
     display: block;
 }
 .overlay{
@@ -350,16 +350,19 @@ footer div{
     height: 100vh;
     width: 100%;
     z-index: 1;
-    background: rgba(255, 255, 255, 0.438);
-    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.514);
+    background: rgb(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(5px);
     display: none;
+}
+#menu-toggle:checked ~ .overlay {
+    display: block;
 }
 .navbar-list li {
     position: relative;
     padding: 0;
 }
-@media (min-width: 300px) and (max-width: 720px){
+@media (min-width: 260px) and (max-width: 720px){
     header{
         justify-content: space-between;
         padding: 0 20px;
@@ -453,6 +456,8 @@ footer div{
         right: 5%;
         width: 90%;
         flex-direction: column;
+        background: var(--nav-bg-mobile)!important;
+        border: 2px solid rgb(0, 204, 255);
         border-top: 0px;
         border-radius: 0px 0px 15px 15px;
         padding: 45px 30px;

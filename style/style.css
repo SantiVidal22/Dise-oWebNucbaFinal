@@ -362,7 +362,7 @@ footer div{
     position: relative;
     padding: 0;
 }
-@media (min-width: 260px) and (max-width: 720px){
+@media (min-width: 250px) and (max-width: 720px){
     header{
         justify-content: space-between;
         padding: 0 20px;
@@ -405,7 +405,7 @@ footer div{
         padding: 0 20px;
     }
     .card-info{
-        width: 100%;
+        width: 95%;
     }
     #formulario{
         padding-top: unset;

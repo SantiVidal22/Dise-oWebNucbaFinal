@@ -433,6 +433,10 @@ footer div{
         display: flex;
         padding-top: 150px;
     }
+    #formulario{
+        padding-top: 150px;
+        gap: 30px;
+    }
     .container-services{
         flex-wrap: wrap;
         gap: 30px;
@@ -446,9 +450,6 @@ footer div{
     .card-info{
         width: 95%;
     }
-    #formulario{
-        padding-top: unset;
-    }
     .form{
         width: 90%;
     }
@@ -459,6 +460,9 @@ footer div{
     }
     iframe{
         display: none;
+    }
+    footer{
+        padding-top: 50px;
     }
 }
 @media (min-width: 721px) and (max-width: 1120px){
